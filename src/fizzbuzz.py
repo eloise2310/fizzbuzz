@@ -13,3 +13,11 @@ def fizzbuzz(num):
         return "Buzz"
     else:
         return str(num)
+    
+def print_fizzbuzz(highest_number):
+    fizzbuzz_numbers = (fizzbuzz(i) for i in range(1, highest_number +1))
+    for n in fizzbuzz_numbers:
+        print(n)
+
+if __name__ == "__main__":
+    print_fizzbuzz(100)
